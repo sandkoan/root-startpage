@@ -34,8 +34,6 @@ for (let wrap in wrappers) {
     let Y = ((e.clientY-b.y)*50/this.offsetHeight-25)*-1;
     let style = `rotateX(${Y}deg) rotateY(${X}deg)`;
     this.children[0].style.transform = style;
-    console.log("Y "+X);
-    console.log("X "+Y);
   }
   wrappers[wrap].onmouseleave = function() {
     this.children[0].style.transform = "rotateX(0deg) rotateY(0deg)";
