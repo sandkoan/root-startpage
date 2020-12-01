@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.that_plastic_wrap_some_people_use_in_cards_because_they_have_sweaty_hands {
+  perspective: 1200px;
+}
+
 .card:link,
 .card:visited {
   color: $white;
@@ -49,6 +53,8 @@
   position: absolute;
   bottom: -100%;
   left: 50%;
+
+  pointer-events: none;
 
   transform: translate(-50%, -50%);
   transition: .2s;

@@ -68,9 +68,10 @@ html(lang="en")
 
     main.main
       each item in cards
-        a(href=item.link).card
-          i(class=item.icon)
-          p.card__name= item.name
+        span.that_plastic_wrap_some_people_use_in_cards_because_they_have_sweaty_hands
+          a(href=item.link).card
+            i(class=item.icon)
+            p.card__name= item.name
     
     // JS
     script(src="index.js")
